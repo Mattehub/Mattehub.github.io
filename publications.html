@@ -5,11 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Research — Publications</title>
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .pub {background:#fff7e6; border:2px solid var(--ink); border-radius:16px; padding:16px; box-shadow:8px 8px 0 var(--ink); margin-bottom:16px;}
+    .pub h3 {margin:0 0 6px 0; font-family:'Bebas Neue', sans-serif; letter-spacing:1px;}
+    .pub .meta {font-size:14px; color:#444;}
+    .filters {display:flex; gap:8px; flex-wrap:wrap; margin:12px 0 20px;}
+    .filters input {padding:8px 10px; border:2px solid var(--ink); border-radius:10px;}
+  </style>
 </head>
 <body>
   <header class="header">
     <h1>PUBLICATIONS</h1>
-    <p class="tagline">Papers, preprints, and talks</p>
+    <p class="tagline">Complete list (from your BibTeX)</p>
   </header>
 
   <nav class="navbar">
@@ -20,21 +27,107 @@
   </nav>
 
   <main class="container">
-    <h2 class="section-title">2025</h2>
-    <div class="card">
-      <h3>Title of your paper</h3>
-      <p><strong>Authors:</strong> You, Someone Else</p>
-      <p><em>Journal/Conference</em>, 2025. <a href="#">doi</a> · <a href="#">pdf</a> · <a href="#">code</a></p>
+    <h2 class="section-title">Search & filters</h2>
+    <div class="filters">
+      <input id="search" type="search" placeholder="Search title/author/venue/year…">
     </div>
 
-    <h2 class="section-title">Preprints</h2>
-    <div class="card">
-      <h3>Working title</h3>
-      <p>arXiv:xxxx.xxxxx, 2025. <a href="#">pdf</a></p>
-    </div>
+    <h2 class="section-title">All papers</h2>
+
+    <article class="pub" data-year="2025" data-title="Synergistic signatures of group mechanisms in higher-order systems" data-authors="Robiglio, Thomas; Neri, Matteo; Coppes, Davide; Agostinelli, Cosimo; Battiston, Federico; Lucas, Maxime; Petri, Giovanni">
+  <h3>Synergistic signatures of group mechanisms in higher-order systems</h3>
+  <p class="meta"><strong>Authors:</strong> Robiglio, Thomas; Neri, Matteo; Coppes, Davide; Agostinelli, Cosimo; Battiston, Federico; Lucas, Maxime; Petri, Giovanni — <em>Physical review letters</em>, 134, (13), 137401 — <strong>2025</strong></p>
+</article>
+
+<article class="pub" data-year="2025" data-title="L-Dopa-induced changes in aperiodic bursts dynamics relate to individual clinical improvement in Parkinson’s disease" data-authors="Agouram, Hasnae; Neri, Matteo; Angiolelli, Marianna; Depannemaecker, Damien; Bahuguna, Jyotika; Schwey, Antoine; Régis, Jean; Carron, Romain; Malfait, Nicole; Eusebio, Alexandre; others">
+  <h3>L-Dopa-induced changes in aperiodic bursts dynamics relate to individual clinical improvement in Parkinson’s disease</h3>
+  <p class="meta"><strong>Authors:</strong> Agouram, Hasnae; Neri, Matteo; Angiolelli, Marianna; Depannemaecker, Damien; Bahuguna, Jyotika; Schwey, Antoine; Régis, Jean; Carron, Romain; Malfait, Nicole; Eusebio, Alexandre; others — <em>npj Parkinson&#x27;s Disease</em>, 11, (1), 158 — <strong>2025</strong></p>
+</article>
+
+<article class="pub" data-year="2025" data-title="Higher-order and distributed synergistic functional interactions encode information gain in goal-directed learning" data-authors="Combrisson, Etienne; Basanisi, Ruggero; Neri, Matteo; Auzias, Guillaume; Petri, Giovanni; Marinazzo, Daniele; Panzeri, Stefano; Brovelli, Andrea">
+  <h3>Higher-order and distributed synergistic functional interactions encode information gain in goal-directed learning</h3>
+  <p class="meta"><strong>Authors:</strong> Combrisson, Etienne; Basanisi, Ruggero; Neri, Matteo; Auzias, Guillaume; Petri, Giovanni; Marinazzo, Daniele; Panzeri, Stefano; Brovelli, Andrea — <em>Nature Communications</em>, 16, (1), 7179 — <strong>2025</strong></p>
+</article>
+
+<article class="pub" data-year="2025" data-title="DISENTANGLING PREVALENCE AND RISK PATHWAYS IN DISEASE COMORBIDITY NETWORKS" data-authors="Gardinazzi, Yuri; March, Roger Gonzaléz; Kalahasti, Suprabhath; Ramirez, Andrea Montaño; Neri, Matteo; Nguyen, Cicely; Palermo, Giovanni; Weis, Erik; Ledebur, Katharina; Dervic, Elma">
+  <h3>DISENTANGLING PREVALENCE AND RISK PATHWAYS IN DISEASE COMORBIDITY NETWORKS</h3>
+  <p class="meta"><strong>Authors:</strong> Gardinazzi, Yuri; March, Roger Gonzaléz; Kalahasti, Suprabhath; Ramirez, Andrea Montaño; Neri, Matteo; Nguyen, Cicely; Palermo, Giovanni; Weis, Erik; Ledebur, Katharina; Dervic, Elma — Journal — <strong>2025</strong></p>
+</article>
+
+<article class="pub" data-year="2025" data-title="Complexity in speech and music listening via neural manifold flows" data-authors="Runfola, Claudio; Neri, Matteo; Sch{ö}n, Daniele; Morillon, Benjamin; Trébuchon, Agnès; Rabuffo, Giovanni; Sorrentino, Pierpaolo; Jirsa, Viktor">
+  <h3>Complexity in speech and music listening via neural manifold flows</h3>
+  <p class="meta"><strong>Authors:</strong> Runfola, Claudio; Neri, Matteo; Sch{ö}n, Daniele; Morillon, Benjamin; Trébuchon, Agnès; Rabuffo, Giovanni; Sorrentino, Pierpaolo; Jirsa, Viktor — <em>Network Neuroscience</em>, 9, (1), 146--158 — <strong>2025</strong></p>
+</article>
+
+<article class="pub" data-year="2025" data-title="Characterization Of Diseases In Temporal Comorbidity Networks" data-authors="Gardinazzi, Yuri; March, Roger Gonzaléz; Kalahasti, Suprabhath; Ramirez, Andrea Montaño; Neri, Matteo; Nguyen, Cicely; Palermo, Giovanni; Weis, Erik; Ledebur, Katharina; Dervi{\&#x27;c}, Elma">
+  <h3>Characterization Of Diseases In Temporal Comorbidity Networks</h3>
+  <p class="meta"><strong>Authors:</strong> Gardinazzi, Yuri; March, Roger Gonzaléz; Kalahasti, Suprabhath; Ramirez, Andrea Montaño; Neri, Matteo; Nguyen, Cicely; Palermo, Giovanni; Weis, Erik; Ledebur, Katharina; Dervi{\&#x27;c}, Elma — <em>arXiv preprint arXiv:2506.22136</em> · <a href="https://arxiv.org/abs/2506.22136">arXiv</a> — <strong>2025</strong></p>
+</article>
+
+<article class="pub" data-year="2025" data-title="Brain Fluidity as a Functional Marker of Tau-Related Neurodegeneration in Alzheimer&#x27;s Disease" data-authors="Mazzara, Camille; Gambino, Giuditta; Duma, Gian Marco; Neri, Matteo; Giglia, Giuseppe; Piccoli, Tommaso; Guajana, Fabrizio; Comelli, Albert; Tuttolomondo, Antonino; Migliore, Michele; others">
+  <h3>Brain Fluidity as a Functional Marker of Tau-Related Neurodegeneration in Alzheimer&#x27;s Disease</h3>
+  <p class="meta"><strong>Authors:</strong> Mazzara, Camille; Gambino, Giuditta; Duma, Gian Marco; Neri, Matteo; Giglia, Giuseppe; Piccoli, Tommaso; Guajana, Fabrizio; Comelli, Albert; Tuttolomondo, Antonino; Migliore, Michele; others — <em>medRxiv</em>, 2025--07 — <strong>2025</strong></p>
+</article>
+
+<article class="pub" data-year="2025" data-title="Beyond Pairwise Interactions: Charting Higher-Order Models of Brain Function" data-authors="Santoro, Andrea; Neri, Matteo; Poetto, Simone; Orsenigo, Davide; Diano, Matteo; Gatica, Marilyn; Petri, GIovanni">
+  <h3>Beyond Pairwise Interactions: Charting Higher-Order Models of Brain Function</h3>
+  <p class="meta"><strong>Authors:</strong> Santoro, Andrea; Neri, Matteo; Poetto, Simone; Orsenigo, Davide; Diano, Matteo; Gatica, Marilyn; Petri, GIovanni — <em>bioRxiv</em>, 2025--06 — <strong>2025</strong></p>
+</article>
+
+<article class="pub" data-year="2025" data-title="An integrated computational framework for diversity-sensitive personalized medicine" data-authors="Coronel-Oliveros, Carlos; Gatica, Marilyn; Herzog, Rubén; Neri, Matteo">
+  <h3>An integrated computational framework for diversity-sensitive personalized medicine</h3>
+  <p class="meta"><strong>Authors:</strong> Coronel-Oliveros, Carlos; Gatica, Marilyn; Herzog, Rubén; Neri, Matteo — <em>Authorea Preprints</em> — <strong>2025</strong></p>
+</article>
+
+<article class="pub" data-year="2025" data-title="An integrated computational approach for diversity-sensitive personalized medicine" data-authors="Coronel-Oliveros, Carlos; Gatica, Marilyn; Herzog, Rubén; Neri, Matteo">
+  <h3>An integrated computational approach for diversity-sensitive personalized medicine</h3>
+  <p class="meta"><strong>Authors:</strong> Coronel-Oliveros, Carlos; Gatica, Marilyn; Herzog, Rubén; Neri, Matteo — <em>Neuroscience</em> — <strong>2025</strong></p>
+</article>
+
+<article class="pub" data-year="2025" data-title="A taxonomy of neuroscientific strategies based on interaction orders" data-authors="Neri, Matteo; Brovelli, Andrea; Castro, Samy; Fraisopi, Fausto; Gatica, Marilyn; Herzog, Ruben; Mediano, Pedro AM; Mindlin, Ivan; Petri, Giovanni; Bor, Daniel; others">
+  <h3>A taxonomy of neuroscientific strategies based on interaction orders</h3>
+  <p class="meta"><strong>Authors:</strong> Neri, Matteo; Brovelli, Andrea; Castro, Samy; Fraisopi, Fausto; Gatica, Marilyn; Herzog, Ruben; Mediano, Pedro AM; Mindlin, Ivan; Petri, Giovanni; Bor, Daniel; others — <em>European Journal of Neuroscience</em>, 61, (3), e16676 — <strong>2025</strong></p>
+</article>
+
+<article class="pub" data-year="2024" data-title="Neuronal avalanches support cognitive processes during speech and music listening" data-authors="Neri, Matteo; Runfola, Claudio; te Rietmolen, Noémie; Sorrentino, Pierpaolo; Schon, Daniele; Morillon, Benjamin; Rabuffo, Giovanni">
+  <h3>Neuronal avalanches support cognitive processes during speech and music listening</h3>
+  <p class="meta"><strong>Authors:</strong> Neri, Matteo; Runfola, Claudio; te Rietmolen, Noémie; Sorrentino, Pierpaolo; Schon, Daniele; Morillon, Benjamin; Rabuffo, Giovanni — <em>the OHBM 2024 Annual Meeting</em> — <strong>2024</strong></p>
+</article>
+
+<article class="pub" data-year="2024" data-title="HOI: A Python toolbox for high-performance estimation of Higher-Order Interactions from multivariate data" data-authors="Neri, Matteo; Vinchhi, Dishie; Ferreyra, Christian; Robiglio, Thomas; Ates, Onur; Ontivero-Ortega, Marlis; Brovelli, Andrea; Marinazzo, Daniele; Combrisson, Etienne">
+  <h3>HOI: A Python toolbox for high-performance estimation of Higher-Order Interactions from multivariate data</h3>
+  <p class="meta"><strong>Authors:</strong> Neri, Matteo; Vinchhi, Dishie; Ferreyra, Christian; Robiglio, Thomas; Ates, Onur; Ontivero-Ortega, Marlis; Brovelli, Andrea; Marinazzo, Daniele; Combrisson, Etienne — <em>Journal of Open Source Software</em>, 9, (103), 7360 — <strong>2024</strong></p>
+</article>
+
+<article class="pub" data-year="2023" data-title="Phasik: a Python package to identify system states in partially temporal networks" data-authors="Lucas, Maxime; Townsend-Teague, Alex; Neri, Matteo; Poetto, Simone; Morris, Arthur; Habermann, Bianca; Tichit, Laurent">
+  <h3>Phasik: a Python package to identify system states in partially temporal networks</h3>
+  <p class="meta"><strong>Authors:</strong> Lucas, Maxime; Townsend-Teague, Alex; Neri, Matteo; Poetto, Simone; Morris, Arthur; Habermann, Bianca; Tichit, Laurent — <em>Journal of Open Source Software</em>, 8, (91), 5872 — <strong>2023</strong></p>
+</article>
+
+<article class="pub" data-year="2023" data-title="Neuronal avalanches in naturalistic speech and music listening" data-authors="Neri, Matteo; Runfola, Claudio; te Rietmolen, Noemie; Sorrentino, Pierpaolo; Schon, Daniele; Morillon, Benjamin; Rabuffo, Giovanni">
+  <h3>Neuronal avalanches in naturalistic speech and music listening</h3>
+  <p class="meta"><strong>Authors:</strong> Neri, Matteo; Runfola, Claudio; te Rietmolen, Noemie; Sorrentino, Pierpaolo; Schon, Daniele; Morillon, Benjamin; Rabuffo, Giovanni — <em>bioRxiv</em>, 2023--12 — <strong>2023</strong></p>
+</article>
+
+<article class="pub" data-year="0" data-title="L-Dopa-induced changes in aperiodic bursts dynamics relate to individual clinical improvement in ParkinsonLs" data-authors="Agouram, Hasnae; Neri, Matteo; Angiolelli, Marianna; Depannemaecker, Damien; Bahuguna, Jyotika; Schwey, Antoine; Régis, Jean; Carron, Romain; Malfait, Nicole; Eusebio, Alexandre; others">
+  <h3>L-Dopa-induced changes in aperiodic bursts dynamics relate to individual clinical improvement in ParkinsonLs</h3>
+  <p class="meta"><strong>Authors:</strong> Agouram, Hasnae; Neri, Matteo; Angiolelli, Marianna; Depannemaecker, Damien; Bahuguna, Jyotika; Schwey, Antoine; Régis, Jean; Carron, Romain; Malfait, Nicole; Eusebio, Alexandre; others — Journal — </p>
+</article>
+
   </main>
 
   <footer class="footer">© <span id="y"></span> My Name</footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const q = document.getElementById('search');
+    const pubs = Array.from(document.querySelectorAll('.pub'));
+    q?.addEventListener('input', () => {
+      const s = q.value.toLowerCase();
+      pubs.forEach(p => {
+        const txt = p.innerText.toLowerCase();
+        p.style.display = txt.includes(s) ? '' : 'none';
+      });
+    });
+  </script>
 </body>
 </html>
