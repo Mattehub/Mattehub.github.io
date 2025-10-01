@@ -102,10 +102,11 @@ h2.section-title{
   z-index: 1; /* sit above the black band */
 }
 
-.avatar{
-  width: clamp(120px, 22vw, 184px);
-  height: clamp(120px, 22vw, 184px);
-  border-radius: 100%;
+/* Bigger avatar — uses the CLASS selector .avatar */
+.avatar {
+  width: clamp(180px, 30vw, 280px);  /* bigger min, bigger max */
+  height: clamp(180px, 30vw, 280px);
+  border-radius: 50%;
   border: 3px solid var(--cream);
   box-shadow: 6px 6px 0 var(--blood);
   object-fit: cover;
