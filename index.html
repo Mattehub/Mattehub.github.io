@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Research — Home</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>MY RESEARCH</h1>
+    <p class="tagline">Science with a grindhouse twist — projects, people, and papers told with style.</p>
+  </header>
+
+  <nav class="navbar">
+    <a class="active" href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="collaborators.html">Collaborators</a>
+    <a href="publications.html">Publications</a>
+  </nav>
+
+  <main class="container">
+    <section class="film-border card">
+      <h2 class="section-title">News</h2>
+
+      <article class="news-item" data-date="2025-09-15">
+        <div class="title"><strong>Preprint released on network diffusion</strong></div>
+        <small><time datetime="2025-09-15">15 Sep 2025</time> — With A. Smith & B. Rossi</small>
+        <p>We introduce a simple estimator for contagion timing on sparse graphs. Code and data coming soon.</p>
+      </article>
+
+      <article class="news-item" data-date="2025-07-02">
+        <div class="title"><strong>Invited talk at Complex Systems Seminar</strong></div>
+        <small><time datetime="2025-07-02">2 Jul 2025</time> — University of Somewhere</small>
+        <p>Slides and recording are available on request.</p>
+      </article>
+
+      <article class="news-item" data-date="2024-12-10">
+        <div class="title"><strong>Project grant awarded</strong></div>
+        <small><time datetime="2024-12-10">10 Dec 2024</time> — Funding Agency X</small>
+        <p>Three-year grant to study temporal networks in epidemiology.</p>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">About</h2>
+      <p>Hello! I’m a researcher working on networks, data, and dynamical systems. This site collects my projects, collaborators, and publications. It’s intentionally simple — text first — with a little Tarantino flair.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © <span id="y"></span> My Name — Built with GitHub Pages
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

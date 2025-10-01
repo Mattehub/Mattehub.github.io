@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Research — Projects</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>PROJECTS</h1>
+    <p class="tagline">Ongoing & past work</p>
+  </header>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a class="active" href="projects.html">Projects</a>
+    <a href="collaborators.html">Collaborators</a>
+    <a href="publications.html">Publications</a>
+  </nav>
+
+  <main class="container">
+    <h2 class="section-title">Selected projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Temporal networks in epidemics</h3>
+        <p>Modeling time-resolved contacts to improve outbreak forecasts. <a href="#">code</a> · <a href="#">paper</a></p>
+      </div>
+      <div class="card">
+        <h3>Mobility & diffusion</h3>
+        <p>How movement patterns shape spreading processes.</p>
+      </div>
+      <div class="card">
+        <h3>Community detection</h3>
+        <p>Fast heuristics for dynamic graphs.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">© <span id="y"></span> My Name</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
