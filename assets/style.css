@@ -103,8 +103,8 @@ h2.section-title{
 }
 
 .avatar{
-  width: 92px;              /* change size here */
-  height: 92px;
+  width: clamp(120px, 22vw, 184px);
+  height: clamp(120px, 22vw, 184px);
   border-radius: 50%;
   border: 3px solid var(--cream);
   box-shadow: 6px 6px 0 var(--blood);
