@@ -14,11 +14,10 @@ html,body{margin:0;padding:0;background:var(--cream);color:var(--ink);font-famil
 
 .header {
   position:relative;
-  padding: 72px 20px 40px;
-  text-align:center;
-  overflow:hidden;
-  background: linear-gradient(180deg, rgba(0,0,0,0.75), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517602302552-471fe67acf66?q=80&w=2069&auto=format&fit=crop') center/cover no-repeat;
+  padding: 32px 16px;
+  background: #000;              /* black */
   color: var(--cream);
+  border-bottom: 4px solid var(--blood);
 }
 
 .header h1{
@@ -91,3 +90,39 @@ h2.section-title{
 }
 .film-border:before{ top:-14px; }
 .film-border:after{ bottom:-14px; }
+
+.id-row{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 8px 8px 16px;
+  position: relative;
+  z-index: 1; /* sit above the black band */
+}
+
+.avatar{
+  width: 92px;              /* change size here */
+  height: 92px;
+  border-radius: 50%;
+  border: 3px solid var(--cream);
+  box-shadow: 6px 6px 0 var(--blood);
+  object-fit: cover;
+}
+
+.title-wrap h1{
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+  font-size: clamp(40px, 8vw, 96px);
+  line-height: 0.9;
+  margin: 0;
+  text-shadow: 2px 2px 0 var(--blood);
+}
+
+.title-wrap .tagline{
+  margin: 6px 0 0;
+  color: #f7f1e8;
+  max-width: 820px;
+  font-size: clamp(14px, 2.2vw, 20px);
+}
