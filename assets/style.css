@@ -127,3 +127,140 @@ h2.section-title{
   max-width: 820px;
   font-size: clamp(14px, 2.2vw, 20px);
 }
+
+/* ================================
+   Sober theme — complete stylesheet
+   (Replace your assets/style.css with this)
+   ================================= */
+
+/* Palette */
+:root{
+  --page:#fafafa;       /* page background */
+  --ink:#222222;        /* main text */
+  --muted:#6b7280;      /* secondary text */
+  --line:#e5e7eb;       /* subtle lines */
+  --accent:#0f766e;     /* calm teal accent (change if you want) */
+  --card:#ffffff;       /* surfaces/cards */
+}
+
+/* Reset-ish */
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; }
+body{
+  background:var(--page);
+  color:var(--ink);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height:1.6;
+}
+
+/* ---------- Header (keeps your photo on the left) ---------- */
+.header{
+  position:relative;
+  padding: 28px 16px;
+  background: #ffffff;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+
+.id-row{
+  max-width: 1000px;
+  margin: 0 auto;
+  display:flex;
+  align-items:center;
+  gap: 18px;
+  padding: 4px 0;
+}
+
+.avatar{
+  flex:0 0 auto;
+  width: clamp(180px, 30vw, 260px);
+  height: clamp(180px, 30vw, 260px);
+  border-radius: 50%;
+  border: 2px solid var(--line);
+  object-fit: cover;
+  /* no heavy shadows in the sober theme */
+  box-shadow: none;
+}
+
+.title-wrap{ min-width:0; }
+.title-wrap h1{
+  margin:0;
+  font-weight:800;
+  letter-spacing:0.2px;
+  font-size: clamp(32px, 6vw, 56px);
+}
+.title-wrap .tagline{
+  margin:8px 0 0;
+  color:var(--muted);
+  font-size: clamp(14px, 2.5vw, 18px);
+}
+
+/* ---------- Navigation (works for .navbar or .nav) ---------- */
+.navbar, .nav{
+  display:flex; gap:12px; justify-content:center; align-items:center;
+  padding: 10px 12px;
+  background:#ffffff;
+  border-bottom:1px solid var(--line);
+  position: sticky; top:0; z-index: 10;
+}
+.navbar a, .nav a{
+  color:#374151; text-decoration:none; padding:8px 12px; border-radius:10px; font-weight:600;
+}
+.navbar a.active, .navbar a:hover,
+.nav a.active, .nav a:hover{
+  background:#f3f4f6;
+  color:#111827;
+}
+
+/* ---------- Layout ---------- */
+.container{ max-width:1000px; margin: 24px auto; padding: 0 16px; }
+
+/* ---------- Cards & sections ---------- */
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.04);
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+h2.section-title{
+  margin: 6px 0 12px;
+  font-size: clamp(22px, 3.6vw, 30px);
+  font-weight: 700;
+  border-left: 6px solid var(--accent);
+  padding-left: 10px;
+}
+
+/* ---------- News items on Home ---------- */
+.news-item{
+  margin: 10px 0; padding: 12px;
+  background:#ffffff;
+  border:1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius:10px;
+}
+.news-item time{ font-weight:700; margin-right:8px; color:var(--accent); }
+.news-item small{ color:#6b7280; }
+
+/* ---------- Grid helpers (projects/collaborators) ---------- */
+.grid{ display:grid; gap:16px; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); }
+.card h3{ margin-top:0; font-weight:700; }
+
+/* ---------- Footer ---------- */
+.footer{
+  text-align:center; padding: 22px; color:#6b7280;
+  border-top: 1px solid var(--line); margin-top: 32px;
+}
+
+/* ---------- Remove previous “film strip” styling if present ---------- */
+.film-border,
+.film-border:before,
+.film-border:after{ all: unset; }
+
+/* ---------- Responsive tweak: keep photo + name tidy on small screens ---------- */
+@media (max-width: 420px){
+  .avatar{ width: 140px; height: 140px; }
+  .id-row{ gap: 12px; }
+}
