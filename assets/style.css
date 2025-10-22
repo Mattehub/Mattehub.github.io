@@ -1,136 +1,147 @@
-/* ================================
-   Sober theme — complete stylesheet
-   (Replace your assets/style.css with this)
-   ================================= */
-
-/* Palette */
-:root{
-  --page:#fafafa;       /* page background */
-  --ink:#222222;        /* main text */
-  --muted:#6b7280;      /* secondary text */
-  --line:#e5e7eb;       /* subtle lines */
-  --accent:#0f766e;     /* calm teal accent (change if you want) */
-  --card:#ffffff;       /* surfaces/cards */
+/* Minimal CSS to replicate the left-sidebar + right-content layout */
+/* ——— Root tokens ——— */
+:root {
+  --bg: #ffffff;
+  --text: #111318;
+  --muted: #5a606e;
+  --accent: #0f62fe;
+  --border: #e6e8ee;
+  --sidebar-w: 280px;
+  --radius: 14px;
+  --space: clamp(16px, 2vw, 24px);
+  --maxw: 1100px;
+  --shadow: 0 6px 20px rgba(0,0,0,.06);
 }
 
-/* Reset-ish */
-*{ box-sizing:border-box; }
-html,body{ margin:0; padding:0; }
-body{
-  background:var(--page);
-  color:var(--ink);
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  line-height:1.6;
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--bg);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* ---------- Header (keeps your photo on the left) ---------- */
-.header{
-  position:relative;
-  padding: 28px 16px;
-  background: #ffffff;
-  color: var(--ink);
-  border-bottom: 1px solid var(--line);
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Accessibility */
+.skip-link {
+  position: absolute; left: -9999px; top: auto;
+}
+.skip-link:focus {
+  left: 12px; top: 12px; background: #fff; padding: 8px 12px; border-radius: 8px;
+  border: 1px solid var(--border); z-index: 10;
 }
 
-.id-row{
-  max-width: 1000px;
+/* Page grid */
+.page {
+  max-width: var(--maxw);
   margin: 0 auto;
-  display:flex;
-  align-items:center;
-  gap: 18px;
-  padding: 4px 0;
+  display: grid;
+  grid-template-columns: var(--sidebar-w) 1fr;
+  gap: var(--space);
+  padding: var(--space);
 }
 
-.avatar{
-  flex:0 0 auto;
-  width: clamp(180px, 30vw, 260px);
-  height: clamp(180px, 30vw, 260px);
-  border-radius: 50%;
-  border: 2px solid var(--line);
-  object-fit: cover;
-  /* no heavy shadows in the sober theme */
-  box-shadow: none;
+/* Sidebar */
+.sidebar {
+  position: sticky;
+  top: var(--space);
+  align-self: start;
+  border: 1px solid var(--border);
+  padding: var(--space);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  background: #fff;
+  height: fit-content;
 }
 
-.title-wrap{ min-width:0; }
-.title-wrap h1{
-  margin:0;
-  font-weight:800;
-  letter-spacing:0.2px;
-  font-size: clamp(32px, 6vw, 56px);
-}
-.title-wrap .tagline{
-  margin:8px 0 0;
-  color:var(--muted);
-  font-size: clamp(14px, 2.5vw, 18px);
+.avatar-wrap { display: flex; justify-content: center; }
+.avatar {
+  width: 160px; height: 160px; border-radius: 50%;
+  object-fit: cover; border: 1px solid var(--border);
 }
 
-/* ---------- Navigation (works for .navbar or .nav) ---------- */
-.navbar, .nav{
-  display:flex; gap:12px; justify-content:center; align-items:center;
-  padding: 10px 12px;
-  background:#ffffff;
-  border-bottom:1px solid var(--line);
-  position: sticky; top:0; z-index: 10;
+.name {
+  margin: 14px 0 4px; font-size: 1.6rem; line-height: 1.2;
+  text-align: center;
 }
-.navbar a, .nav a{
-  color:#374151; text-decoration:none; padding:8px 12px; border-radius:10px; font-weight:600;
-}
-.navbar a.active, .navbar a:hover,
-.nav a.active, .nav a:hover{
-  background:#f3f4f6;
-  color:#111827;
+.role {
+  color: var(--muted); margin: 0 0 12px; text-align: center;
 }
 
-/* ---------- Layout ---------- */
-.container{ max-width:1000px; margin: 24px auto; padding: 0 16px; }
+.nav {
+  display: grid; gap: 8px; margin: 16px 0 8px;
+}
+.nav a {
+  display: block; padding: 10px 12px; border-radius: 10px;
+  border: 1px solid var(--border);
+}
+.nav a:hover { background: #f8f9fb; text-decoration: none; }
 
-/* ---------- Cards & sections ---------- */
-.card{
-  background:var(--card);
-  border:1px solid var(--line);
-  border-radius: 12px;
-  box-shadow: 0 1px 2px rgba(0,0,0,.04);
-  padding: 18px;
-  margin-bottom: 18px;
+.social {
+  margin-top: 10px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;
+}
+.social a {
+  display: inline-flex; width: 36px; height: 36px; align-items: center; justify-content: center;
+  border: 1px solid var(--border); border-radius: 50%;
+}
+.social a:hover { background: #f8f9fb; text-decoration: none; }
+
+/* Content */
+.content { min-width: 0; }
+.section { margin-bottom: calc(var(--space) * 1.5); }
+.lead { font-size: 1.1rem; }
+
+/* Cards scroller (JS-free carousel-ish) */
+.scroller {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(260px, 1fr);
+  gap: var(--space);
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scroll-snap-type: x mandatory;
+}
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space);
+  background: #fff;
+  box-shadow: var(--shadow);
+  scroll-snap-align: start;
+}
+.card h3 { margin-top: 0; font-size: 1rem; }
+.card .year { color: var(--muted); font-weight: 400; font-size: .95rem; }
+.card .meta { color: var(--muted); margin-bottom: 0; }
+
+/* Simple link list */
+.linklist { padding-left: 20px; }
+.linklist li { margin: 6px 0; }
+
+/* Buttons */
+.button {
+  display: inline-block; padding: 10px 14px; border-radius: 10px;
+  border: 1px solid var(--accent);
+}
+.button:hover { background: rgba(15,98,254,.06); text-decoration: none; }
+.button.ghost { border-color: var(--border); }
+
+/* Footer */
+.footer {
+  margin-top: calc(var(--space) * 2);
+  padding-top: var(--space);
+  border-top: 1px solid var(--border);
+  display: flex; justify-content: space-between; align-items: center;
+  color: var(--muted);
 }
 
-h2.section-title{
-  margin: 6px 0 12px;
-  font-size: clamp(22px, 3.6vw, 30px);
-  font-weight: 700;
-  border-left: 6px solid var(--accent);
-  padding-left: 10px;
-}
-
-/* ---------- News items on Home ---------- */
-.news-item{
-  margin: 10px 0; padding: 12px;
-  background:#ffffff;
-  border:1px solid var(--line);
-  border-left: 4px solid var(--accent);
-  border-radius:10px;
-}
-.news-item time{ font-weight:700; margin-right:8px; color:var(--accent); }
-.news-item small{ color:#6b7280; }
-
-/* ---------- Grid helpers (projects/collaborators) ---------- */
-.grid{ display:grid; gap:16px; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); }
-.card h3{ margin-top:0; font-weight:700; }
-
-/* ---------- Footer ---------- */
-.footer{
-  text-align:center; padding: 22px; color:#6b7280;
-  border-top: 1px solid var(--line); margin-top: 32px;
-}
-
-/* ---------- Remove previous “film strip” styling if present ---------- */
-.film-border,
-.film-border:before,
-.film-border:after{ all: unset; }
-
-/* ---------- Responsive tweak: keep photo + name tidy on small screens ---------- */
-@media (max-width: 420px){
-  .avatar{ width: 140px; height: 140px; }
-  .id-row{ gap: 12px; }
+/* Responsive: stack on small screens */
+@media (max-width: 860px) {
+  .page { grid-template-columns: 1fr; }
+  .sidebar { position: relative; top: 0; }
+  .nav { grid-auto-flow: column; grid-auto-columns: 1fr; overflow-x: auto; }
 }
