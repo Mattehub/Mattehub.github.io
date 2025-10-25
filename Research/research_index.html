@@ -1,0 +1,207 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matteo Neri</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <meta name="description" content="Short bio / tagline" />
+  <!--
+    ✦ Notes
+    - This file keeps your original layout/style, and adds a clear, clickable grid
+      of four research directions (“squares”), each with generous image space.
+    - Replace the placeholder images (assets/*.jpg) when ready.
+    - Ensure you create the target pages: philosophy.html, mathxhealth.html,
+      mathxintelligence.html, mathxcomplexsystems.html
+    - Add the CSS snippet (below) to assets/style.css if your current stylesheet
+      doesn’t already define these classes.
+  -->
+  <style>
+    /* --- Minimal additions (safe to merge into assets/style.css) --- */
+    :root{
+      --gap: 1.25rem;
+      --radius: 1rem;
+    }
+    .section h2{ margin-bottom: .75rem; }
+    .areas-intro{ margin-bottom: .75rem; color: var(--text-2, #555); }
+
+    .areas-grid{
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: var(--gap);
+    }
+    /* 2 columns on phones, 12-col grid on desktop using spans */
+    @media (max-width: 720px){
+      .areas-grid{ grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .area-card{
+      grid-column: span 6;                   /* 2-up on desktop */
+      display: block;                        /* anchor behaves like a card */
+      border-radius: var(--radius);
+      overflow: hidden;
+      text-decoration: none;
+      background: var(--surface, #f7f7f7);
+      box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .area-card:hover{ transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,.12); }
+    .area-media{
+      width: 100%;
+      aspect-ratio: 16 / 9;                  /* generous image space */
+      object-fit: cover;
+      background: linear-gradient(180deg,#ececec,#e4e4e4);
+    }
+    .area-body{ padding: 1rem 1rem 1.1rem; }
+    .area-title{ margin: 0; font-size: 1.15rem; color: inherit; }
+    .area-kicker{ font-size: .9rem; color: var(--text-2, #666); margin: .35rem 0 0; }
+
+    /* Make each square really feel like a "square" on wide screens */
+    @media (min-width: 1024px){
+      .area-media{ aspect-ratio: 1 / 1; }    /* more square feel on desktop */
+    }
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <nav class="topnav">
+    <a href="index.html" style="font-size:1.25rem;">Matteo Neri</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="cv.html">CV</a>
+  </nav>
+</header>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="page">
+  <!-- Sidebar (left on desktop, top on mobile) -->
+  <aside class="sidebar">
+    <div class="avatar-wrap">
+      <img class="avatar" src="avatar.jpg" alt="Portrait of Matteo Neri" />
+    </div>
+    <h1 class="name">Matteo Neri</h1>
+    <p class="role">Affiliation · Role</p>
+
+    <div class="social">
+      <a href="#" aria-label="Email">✉️</a>
+      <a href="#" aria-label="Twitter / X">𝕏</a>
+      <a href="#" aria-label="LinkedIn">in</a>
+      <a href="#" aria-label="GitHub">GH</a>
+      <a href="#" aria-label="Google Scholar">GS</a>
+      <a href="#" aria-label="Bluesky">𝔅</a>
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <main id="main" class="content">
+    <section id="about" class="section">
+      <p class="lead">
+        I am a [your position] at [your institute]. My work focuses on [topic].
+        I build models and analyze [data / systems].
+      </p>
+    </section>
+
+    <!-- ✦ NEW: Research directions as four large squares with image space -->
+    <section id="areas" class="section">
+      <h2>Research directions</h2>
+      <p class="areas-intro">Click a tile to open a dedicated page. Replace the images and add content in the linked pages.</p>
+
+      <div class="areas-grid">
+        <!-- Philosophy -->
+        <a class="area-card" href="philosophy.html">
+          <img class="area-media" src="assets/philosophy.jpg" alt="Philosophy — placeholder image" />
+          <div class="area-body">
+            <h3 class="area-title">Philosophy</h3>
+            <!-- optional kicker/teaser line below; keep or remove -->
+            <!-- <p class="area-kicker">Foundations, epistemology, and scientific method</p> -->
+          </div>
+        </a>
+
+        <!-- Math x Health -->
+        <a class="area-card" href="mathxhealth.html">
+          <img class="area-media" src="assets/mathxhealth.jpg" alt="Math × Health — placeholder image" />
+          <div class="area-body">
+            <h3 class="area-title">Math × Health</h3>
+          </div>
+        </a>
+
+        <!-- Math x Intelligence -->
+        <a class="area-card" href="mathxintelligence.html">
+          <img class="area-media" src="assets/mathxintelligence.jpg" alt="Math × Intelligence — placeholder image" />
+          <div class="area-body">
+            <h3 class="area-title">Math × Intelligence</h3>
+          </div>
+        </a>
+
+        <!-- Math x Complex Systems -->
+        <a class="area-card" href="mathxcomplexsystems.html">
+          <img class="area-media" src="assets/mathxcomplex.jpg" alt="Math × Complex Systems — placeholder image" />
+          <div class="area-body">
+            <h3 class="area-title">Math × Complex Systems</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="highlights" class="section">
+      <h2>Some of our latest studies</h2>
+      <div class="scroller">
+        <article class="card">
+          <h3><a href="#">Paper / Project Title</a> <span class="year">2025</span></h3>
+          <p>One‑line summary of the work or result.</p>
+          <p class="meta"><a href="#">preprint</a> · <a href="#">code</a> · <a href="#">talk</a></p>
+        </article>
+        <article class="card">
+          <h3><a href="#">Another Highlight</a> <span class="year">2024</span></h3>
+          <p>Short description that fits in two lines.</p>
+          <p class="meta"><a href="#">paper</a> · <a href="#">blog</a></p>
+        </article>
+        <article class="card">
+          <h3><a href="#">Tool / Library</a> <span class="year">2024</span></h3>
+          <p>What it does and why it’s useful.</p>
+          <p class="meta"><a href="#">docs</a> · <a href="#">pip</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="press" class="section">
+      <h2>Media & talks</h2>
+      <ul class="linklist">
+        <li><a href="#">Outlet / Podcast: Title of appearance</a></li>
+        <li><a href="#">Conference talk: Title</a></li>
+        <li><a href="#">Blog: Summary article</a></li>
+      </ul>
+    </section>
+
+    <section id="team" class="section">
+      <h2>Team</h2>
+      <p><em>Add a line or link to your group / collaborators page.</em></p>
+    </section>
+
+    <section id="publications" class="section">
+      <h2>Publications</h2>
+      <p>Keep the landing page clean. Link to a dedicated page or Google Scholar.</p>
+      <p><a class="button" href="#">Publications list →</a> <a class="button ghost" href="#">Google Scholar →</a></p>
+    </section>
+
+    <section id="cv" class="section">
+      <h2>CV</h2>
+      <p><a class="button" href="cv.pdf">Download CV (PDF)</a></p>
+    </section>
+
+    <footer class="footer">
+      <div class="foot-left">
+        <span>© <span id="year"></span> Matteo Neri</span>
+      </div>
+      <div class="foot-right">
+        <a href="#sitemap">Sitemap</a>
+      </div>
+    </footer>
+  </main>
+</div>
+<script>
+  // set year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
