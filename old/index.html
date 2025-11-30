@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matteo Neri</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <meta name="description" content="Short bio / tagline">
+</head>
+<body>
+<header class="navbar">
+    <nav class="topnav">
+      <a href="index.html" style="font-size:1.25rem;">Matteo Neri</a>
+      <a href="Research/research_index.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="Previous work experiences">CV</a>
+    </nav>
+  </header>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <!-- Sidebar (left on desktop, top on mobile) -->
+    <aside class="sidebar">
+      <div class="avatar-wrap">
+        <img class="avatar" src="assets/me.jpeg" alt="Portrait of Matteo Neri">
+      </div>
+      <h1 class="name">Matteo Neri</h1>
+      <p class="role">PhD student</p>
+
+      <div class="social">
+        <a href="mailto:matteo.neri@etu.univ-amu.fr" aria-label="Email">✉️</a>
+        <a href="https://www.linkedin.com/in/matteo-neri-0ab1a512a/" aria-label="LinkedIn">in</a>
+        <a href="https://github.com/Mattehub" aria-label="GitHub">GH</a>
+        <a href="https://scholar.google.com/citations?user=ubwQC-AAAAAJ&hl=it" aria-label="Google Scholar">GS</a>
+        <a href="https://bsky.app/profile/matteblacks.bsky.social" aria-label="Bluesky">𝔅</a>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main id="main" class="content">
+      <section id="about" class="section">
+        <p class="lead">
+          I am a PhD student at Aix-Marseille University, working at the 
+          hyper-edge between Complex Systems Physics, Computational Neuroscience, and Artificial Intelligence.
+          
+          My research focuses on how intelligent behavior emerges in both natural and artificial systems, 
+          such as the human brain, neural networks, economy and society. Specifically, 
+          my research aims at (i) quantifying emergent behaviors in complex systems, 
+          (ii) uncovering the mechanisms that lead to such emergent behaviors, and 
+          (iii) developing methods to intervene and optimize or repair these mechanisms. 
+          By investigating these questions, I strive to improve our ability to predict, understand, 
+          and control complex systems, to address critical challenges of our century, 
+          particularly in the field of clinical neuroscience and AI safety.
+        </p>
+      </section>
+
+      <section id="highlights" class="section">
+        <h2>Some of our latest studies</h2>
+        <!-- Simple, JS-free horizontal scroller -->
+        <div class="scroller">
+          <article class="card">
+            <h3><a href="#">Paper / Project Title</a> <span class="year">2025</span></h3>
+            <p>One‑line summary of the work or result.</p>
+            <p class="meta"><a href="#">preprint</a> · <a href="#">code</a> · <a href="#">talk</a></p>
+          </article>
+          <article class="card">
+            <h3><a href="#">Another Highlight</a> <span class="year">2024</span></h3>
+            <p>Short description that fits in two lines.</p>
+            <p class="meta"><a href="#">paper</a> · <a href="#">blog</a></p>
+          </article>
+          <article class="card">
+            <h3><a href="#">Tool / Library</a> <span class="year">2024</span></h3>
+            <p>What it does and why it’s useful.</p>
+            <p class="meta"><a href="#">docs</a> · <a href="#">pip</a></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="press" class="section">
+        <h2>Media & talks</h2>
+        <ul class="linklist">
+          <li><a href="#">Outlet / Podcast: Title of appearance</a></li>
+          <li><a href="#">Conference talk: Title</a></li>
+          <li><a href="#">Blog: Summary article</a></li>
+        </ul>
+      </section>
+
+      <section id="team" class="section">
+        <h2>Team</h2>
+        <p><em>Add a line or link to your group / collaborators page.</em></p>
+      </section>
+
+      <section id="publications" class="section">
+        <h2>Publications</h2>
+        <p>Keep the landing page clean. Link to a dedicated page or Google Scholar.</p>
+        <p><a class="button" href="#">Publications list →</a> <a class="button ghost" href="#">Google Scholar →</a></p>
+      </section>
+
+      <section id="cv" class="section">
+        <h2>CV</h2>
+        <p><a class="button" href="cv.pdf">Download CV (PDF)</a></p>
+      </section>
+
+      <footer class="footer">
+        <div class="foot-left">
+          <span>© <span id="year"></span> Your Name</span>
+        </div>
+        <div class="foot-right">
+          <a href="#sitemap">Sitemap</a>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <script>
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

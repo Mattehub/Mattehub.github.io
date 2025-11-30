@@ -36,6 +36,60 @@ a:hover { text-decoration: underline; }
   border: 1px solid var(--border); z-index: 10;
 }
 
+/* ====== TOP NAVIGATION BAR ====== */
+.navbar {
+  position: sticky;     /* stays at top while scrolling */
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Customize these ↓ to change color + look */
+  background-color: #0f62fe;  /* bar background color */
+  color: white;               /* text color */
+  padding: 10px 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Brand (your name or logo) */
+.nav-brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;             /* link text color */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s, background 0.2s;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.nav-links a:hover {
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+
+/* Responsive: stack links on small screens */
+@media (max-width: 640px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
 /* Page grid */
 .page {
   max-width: var(--maxw);

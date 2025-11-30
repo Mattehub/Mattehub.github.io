@@ -1,116 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Matteo Neri -- Publications</title>
-  <link rel="stylesheet" href="assets/style.css">
-  <style>
-    .pub {background:#fff7e6; border:2px solid var(--ink); border-radius:16px; padding:16px; box-shadow:8px 8px 0 var(--ink); margin-bottom:16px;}
-    .pub h3 {margin:0 0 6px 0; font-family:'Bebas Neue', sans-serif; letter-spacing:1px;}
-    .pub .meta {font-size:14px; color:#444;}
-    .filters {display:flex; gap:8px; flex-wrap:wrap; margin:12px 0 20px;}
-    .filters input {padding:8px 10px; border:2px solid var(--ink); border-radius:10px;}
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications - Matteo Neri</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <h1>PUBLICATIONS</h1>
-    <p class="tagline">Complete list of publications</p>
+  <header class="navbar fade-in">
+    <div class="container nav-inner">
+      <div class="nav-brand" style="font-size:1.25rem;"><a href="index.html">Matteo Neri</a></div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html" class="active">Publications</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </div>
   </header>
 
-  <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a class="active" href="publications.html">Publications</a>
-  </nav>
-
-  <main class="container">
-    <h2 class="section-title">Search & filters</h2>
+  <main class="container fade-in">
+    <h2 class="section-title">Search &amp; filters</h2>
     <div class="filters">
       <input id="search" type="search" placeholder="Search title/author/venue/year…">
     </div>
 
+    <div class="results-bar">
+      <span id="result-count">Showing all papers</span>
+      <a class="underline" href="https://scholar.google.com/citations?user=ubwQC-AAAAAJ&hl=it">Google Scholar</a>
+    </div>
+
     <h2 class="section-title">All papers</h2>
 
-    <article class="pub" data-year="2025" data-title="Synergistic signatures of group mechanisms in higher-order systems" data-authors="Robiglio, Thomas; Neri, Matteo; Coppes, Davide; Agostinelli, Cosimo; Battiston, Federico; Lucas, Maxime; Petri, Giovanni">
-  <h3>Synergistic signatures of group mechanisms in higher-order systems</h3>
-  <p class="meta"><strong>Authors:</strong> Robiglio, Thomas; Neri, Matteo; Coppes, Davide; Agostinelli, Cosimo; Battiston, Federico; Lucas, Maxime; Petri, Giovanni — <em>Physical review letters</em>, 134, (13), 137401 — <strong>2025</strong></p>
-</article>
+    <div id="pub-list" class="pub-list-scroll">
 
-<article class="pub" data-year="2025" data-title="L-Dopa-induced changes in aperiodic bursts dynamics relate to individual clinical improvement in Parkinson’s disease" data-authors="Agouram, Hasnae; Neri, Matteo; Angiolelli, Marianna; Depannemaecker, Damien; Bahuguna, Jyotika; Schwey, Antoine; Régis, Jean; Carron, Romain; Malfait, Nicole; Eusebio, Alexandre; others">
-  <h3>L-Dopa-induced changes in aperiodic bursts dynamics relate to individual clinical improvement in Parkinson’s disease</h3>
-  <p class="meta"><strong>Authors:</strong> Agouram, Hasnae; Neri, Matteo; Angiolelli, Marianna; Depannemaecker, Damien; Bahuguna, Jyotika; Schwey, Antoine; Régis, Jean; Carron, Romain; Malfait, Nicole; Eusebio, Alexandre; others — <em>npj Parkinson&#x27;s Disease</em>, 11, (1), 158 — <strong>2025</strong></p>
-</article>
+      <article class="pub" data-year="2025" data-title="Synergistic signatures of group mechanisms in higher-order systems" data-authors="Robiglio, Thomas; Neri, Matteo; Coppes, Davide; Agostinelli, Cosimo; Battiston, Federico; Lucas, Maxime; Petri, Giovanni">
+        <h3>Synergistic signatures of group mechanisms in higher-order systems</h3>
+        <p class="meta"><strong>Authors:</strong> Robiglio, Thomas; Neri, Matteo; Coppes, Davide; Agostinelli, Cosimo; Battiston, Federico; Lucas, Maxime; Petri, Giovanni — <em>Physical Review Letters</em>, 134 (13): 137401 — <strong>2025</strong></p>
+      </article>
 
-<article class="pub" data-year="2025" data-title="Higher-order and distributed synergistic functional interactions encode information gain in goal-directed learning" data-authors="Combrisson, Etienne; Basanisi, Ruggero; Neri, Matteo; Auzias, Guillaume; Petri, Giovanni; Marinazzo, Daniele; Panzeri, Stefano; Brovelli, Andrea">
-  <h3>Higher-order and distributed synergistic functional interactions encode information gain in goal-directed learning</h3>
-  <p class="meta"><strong>Authors:</strong> Combrisson, Etienne; Basanisi, Ruggero; Neri, Matteo; Auzias, Guillaume; Petri, Giovanni; Marinazzo, Daniele; Panzeri, Stefano; Brovelli, Andrea — <em>Nature Communications</em>, 16, (1), 7179 — <strong>2025</strong></p>
-</article>
+      <article class="pub" data-year="2025" data-title="L-Dopa-induced changes in aperiodic bursts dynamics relate to individual clinical improvement in Parkinson’s disease" data-authors="Agouram, Hasnae; Neri, Matteo; Angiolelli, Marianna; Depannemaecker, Damien; Bahuguna, Jyotika; Schwey, Antoine; Régis, Jean; Carron, Romain; Malfait, Nicole; Eusebio, Alexandre; others">
+        <h3>L-Dopa-induced changes in aperiodic bursts dynamics relate to individual clinical improvement in Parkinson’s disease</h3>
+        <p class="meta"><strong>Authors:</strong> Agouram, Hasnae; Neri, Matteo; Angiolelli, Marianna; Depannemaecker, Damien; Bahuguna, Jyotika; Schwey, Antoine; Régis, Jean; Carron, Romain; Malfait, Nicole; Eusebio, Alexandre; others — <em>npj Parkinson&#x27;s Disease</em>, 11 (1): 158 — <strong>2025</strong></p>
+      </article>
 
-<article class="pub" data-year="2025" data-title="Complexity in speech and music listening via neural manifold flows" data-authors="Runfola, Claudio; Neri, Matteo; Sch{ö}n, Daniele; Morillon, Benjamin; Trébuchon, Agnès; Rabuffo, Giovanni; Sorrentino, Pierpaolo; Jirsa, Viktor">
-  <h3>Complexity in speech and music listening via neural manifold flows</h3>
-  <p class="meta"><strong>Authors:</strong> Runfola, Claudio; Neri, Matteo; Sch{ö}n, Daniele; Morillon, Benjamin; Trébuchon, Agnès; Rabuffo, Giovanni; Sorrentino, Pierpaolo; Jirsa, Viktor — <em>Network Neuroscience</em>, 9, (1), 146--158 — <strong>2025</strong></p>
-</article>
+      <article class="pub" data-year="2025" data-title="Higher-order and distributed synergistic functional interactions encode information gain in goal-directed learning" data-authors="Combrisson, Etienne; Basanisi, Ruggero; Neri, Matteo; Auzias, Guillaume; Petri, Giovanni; Marinazzo, Daniele; Panzeri, Stefano; Brovelli, Andrea">
+        <h3>Higher-order and distributed synergistic functional interactions encode information gain in goal-directed learning</h3>
+        <p class="meta"><strong>Authors:</strong> Combrisson, Etienne; Basanisi, Ruggero; Neri, Matteo; Auzias, Guillaume; Petri, Giovanni; Marinazzo, Daniele; Panzeri, Stefano; Brovelli, Andrea — <em>Nature Communications</em>, 16 (1): 7179 — <strong>2025</strong></p>
+      </article>
 
-<article class="pub" data-year="2025" data-title="Characterization Of Diseases In Temporal Comorbidity Networks" data-authors="Gardinazzi, Yuri; March, Roger Gonzaléz; Kalahasti, Suprabhath; Ramirez, Andrea Montaño; Neri, Matteo; Nguyen, Cicely; Palermo, Giovanni; Weis, Erik; Ledebur, Katharina; Dervi{\&#x27;c}, Elma">
-  <h3>Characterization Of Diseases In Temporal Comorbidity Networks</h3>
-  <p class="meta"><strong>Authors:</strong> Gardinazzi, Yuri; March, Roger Gonzaléz; Kalahasti, Suprabhath; Ramirez, Andrea Montaño; Neri, Matteo; Nguyen, Cicely; Palermo, Giovanni; Weis, Erik; Ledebur, Katharina; Dervi{\&#x27;c}, Elma — <em>arXiv preprint arXiv:2506.22136</em> · <a href="https://arxiv.org/abs/2506.22136">arXiv</a> — <strong>2025</strong></p>
-</article>
+      <article class="pub" data-year="2025" data-title="Complexity in speech and music listening via neural manifold flows" data-authors="Runfola, Claudio; Neri, Matteo; Schön, Daniele; Morillon, Benjamin; Trébuchon, Agnès; Rabuffo, Giovanni; Sorrentino, Pierpaolo; Jirsa, Viktor">
+        <h3>Complexity in speech and music listening via neural manifold flows</h3>
+        <p class="meta"><strong>Authors:</strong> Runfola, Claudio; Neri, Matteo; Sch{ö}n, Daniele; Morillon, Benjamin; Trébuchon, Agnès; Rabuffo, Giovanni; Sorrentino, Pierpaolo; Jirsa, Viktor — <em>Network Neuroscience</em>, 9 (1): 146–158 — <strong>2025</strong></p>
+      </article>
 
-<article class="pub" data-year="2025" data-title="Brain Fluidity as a Functional Marker of Tau-Related Neurodegeneration in Alzheimer&#x27;s Disease" data-authors="Mazzara, Camille; Gambino, Giuditta; Duma, Gian Marco; Neri, Matteo; Giglia, Giuseppe; Piccoli, Tommaso; Guajana, Fabrizio; Comelli, Albert; Tuttolomondo, Antonino; Migliore, Michele; others">
-  <h3>Brain Fluidity as a Functional Marker of Tau-Related Neurodegeneration in Alzheimer&#x27;s Disease</h3>
-  <p class="meta"><strong>Authors:</strong> Mazzara, Camille; Gambino, Giuditta; Duma, Gian Marco; Neri, Matteo; Giglia, Giuseppe; Piccoli, Tommaso; Guajana, Fabrizio; Comelli, Albert; Tuttolomondo, Antonino; Migliore, Michele; others — <em>medRxiv</em>, 2025--07 — <strong>2025</strong></p>
-</article>
+      <article class="pub" data-year="2025" data-title="Characterization Of Diseases In Temporal Comorbidity Networks" data-authors="Gardinazzi, Yuri; March, Roger Gonzaléz; Kalahasti, Suprabhath; Ramirez, Andrea Montaño; Neri, Matteo; Nguyen, Cicely; Palermo, Giovanni; Weis, Erik; Ledebur, Katharina; Dervić, Elma">
+        <h3>Characterization Of Diseases In Temporal Comorbidity Networks</h3>
+        <p class="meta"><strong>Authors:</strong> Gardinazzi, Yuri; March, Roger Gonzaléz; Kalahasti, Suprabhath; Ramirez, Andrea Montaño; Neri, Matteo; Nguyen, Cicely; Palermo, Giovanni; Weis, Erik; Ledebur, Katharina; Dervi{\&#x27;c}, Elma — <em>arXiv preprint arXiv:2506.22136</em> · <a href="https://arxiv.org/abs/2506.22136">arXiv</a> — <strong>2025</strong></p>
+      </article>
 
-<article class="pub" data-year="2025" data-title="Beyond Pairwise Interactions: Charting Higher-Order Models of Brain Function" data-authors="Santoro, Andrea; Neri, Matteo; Poetto, Simone; Orsenigo, Davide; Diano, Matteo; Gatica, Marilyn; Petri, GIovanni">
-  <h3>Beyond Pairwise Interactions: Charting Higher-Order Models of Brain Function</h3>
-  <p class="meta"><strong>Authors:</strong> Santoro, Andrea; Neri, Matteo; Poetto, Simone; Orsenigo, Davide; Diano, Matteo; Gatica, Marilyn; Petri, GIovanni — <em>bioRxiv</em>, 2025--06 — <strong>2025</strong></p>
-</article>
+      <article class="pub" data-year="2025" data-title="Brain Fluidity as a Functional Marker of Tau-Related Neurodegeneration in Alzheimer&#x27;s Disease" data-authors="Mazzara, Camille; Gambino, Giuditta; Duma, Gian Marco; Neri, Matteo; Giglia, Giuseppe; Piccoli, Tommaso; Guajana, Fabrizio; Comelli, Albert; Tuttolomondo, Antonino; Migliore, Michele; others">
+        <h3>Brain Fluidity as a Functional Marker of Tau-Related Neurodegeneration in Alzheimer&#x27;s Disease</h3>
+        <p class="meta"><strong>Authors:</strong> Mazzara, Camille; Gambino, Giuditta; Duma, Gian Marco; Neri, Matteo; Giglia, Giuseppe; Piccoli, Tommaso; Guajana, Fabrizio; Comelli, Albert; Tuttolomondo, Antonino; Migliore, Michele; others — <em>medRxiv</em>, 2025-07 — <strong>2025</strong></p>
+      </article>
 
-<article class="pub" data-year="2025" data-title="An integrated computational framework for diversity-sensitive personalized medicine" data-authors="Coronel-Oliveros, Carlos; Gatica, Marilyn; Herzog, Rubén; Neri, Matteo">
-  <h3>An integrated computational framework for diversity-sensitive personalized medicine</h3>
-  <p class="meta"><strong>Authors:</strong> Coronel-Oliveros, Carlos; Gatica, Marilyn; Herzog, Rubén; Neri, Matteo — <em>Authorea Preprints</em> — <strong>2025</strong></p>
-</article>
+      <article class="pub" data-year="2025" data-title="Beyond Pairwise Interactions: Charting Higher-Order Models of Brain Function" data-authors="Santoro, Andrea; Neri, Matteo; Poetto, Simone; Orsenigo, Davide; Diano, Matteo; Gatica, Marilyn; Petri, Giovanni">
+        <h3>Beyond Pairwise Interactions: Charting Higher-Order Models of Brain Function</h3>
+        <p class="meta"><strong>Authors:</strong> Santoro, Andrea; Neri, Matteo; Poetto, Simone; Orsenigo, Davide; Diano, Matteo; Gatica, Marilyn; Petri, GIovanni — <em>bioRxiv</em>, 2025-06 — <strong>2025</strong></p>
+      </article>
 
-<article class="pub" data-year="2025" data-title="A taxonomy of neuroscientific strategies based on interaction orders" data-authors="Neri, Matteo; Brovelli, Andrea; Castro, Samy; Fraisopi, Fausto; Gatica, Marilyn; Herzog, Ruben; Mediano, Pedro AM; Mindlin, Ivan; Petri, Giovanni; Bor, Daniel; others">
-  <h3>A taxonomy of neuroscientific strategies based on interaction orders</h3>
-  <p class="meta"><strong>Authors:</strong> Neri, Matteo; Brovelli, Andrea; Castro, Samy; Fraisopi, Fausto; Gatica, Marilyn; Herzog, Ruben; Mediano, Pedro AM; Mindlin, Ivan; Petri, Giovanni; Bor, Daniel; others — <em>European Journal of Neuroscience</em>, 61, (3), e16676 — <strong>2025</strong></p>
-</article>
+      <article class="pub" data-year="2025" data-title="An integrated computational framework for diversity-sensitive personalized medicine" data-authors="Coronel-Oliveros, Carlos; Gatica, Marilyn; Herzog, Rubén; Neri, Matteo">
+        <h3>An integrated computational framework for diversity-sensitive personalized medicine</h3>
+        <p class="meta"><strong>Authors:</strong> Coronel-Oliveros, Carlos; Gatica, Marilyn; Herzog, Rubén; Neri, Matteo — <em>IBRO Neuroscience</em> — <strong>2025</strong></p>
+      </article>
 
-<article class="pub" data-year="2024" data-title="Neuronal avalanches support cognitive processes during speech and music listening" data-authors="Neri, Matteo; Runfola, Claudio; te Rietmolen, Noémie; Sorrentino, Pierpaolo; Schon, Daniele; Morillon, Benjamin; Rabuffo, Giovanni">
-  <h3>Neuronal avalanches support cognitive processes during speech and music listening</h3>
-  <p class="meta"><strong>Authors:</strong> Neri, Matteo; Runfola, Claudio; te Rietmolen, Noémie; Sorrentino, Pierpaolo; Schon, Daniele; Morillon, Benjamin; Rabuffo, Giovanni — <em>the OHBM 2024 Annual Meeting</em> — <strong>2024</strong></p>
-</article>
+      <article class="pub" data-year="2025" data-title="A taxonomy of neuroscientific strategies based on interaction orders" data-authors="Neri, Matteo; Brovelli, Andrea; Castro, Samy; Fraisopi, Fausto; Gatica, Marilyn; Herzog, Ruben; Mediano, Pedro AM; Mindlin, Ivan; Petri, Giovanni; Bor, Daniel; others">
+        <h3>A taxonomy of neuroscientific strategies based on interaction orders</h3>
+        <p class="meta"><strong>Authors:</strong> Neri, Matteo; Brovelli, Andrea; Castro, Samy; Fraisopi, Fausto; Gatica, Marilyn; Herzog, Ruben; Mediano, Pedro AM; Mindlin, Ivan; Petri, Giovanni; Bor, Daniel; others — <em>European Journal of Neuroscience</em>, 61 (3): e16676 — <strong>2025</strong></p>
+      </article>
 
-<article class="pub" data-year="2024" data-title="HOI: A Python toolbox for high-performance estimation of Higher-Order Interactions from multivariate data" data-authors="Neri, Matteo; Vinchhi, Dishie; Ferreyra, Christian; Robiglio, Thomas; Ates, Onur; Ontivero-Ortega, Marlis; Brovelli, Andrea; Marinazzo, Daniele; Combrisson, Etienne">
-  <h3>HOI: A Python toolbox for high-performance estimation of Higher-Order Interactions from multivariate data</h3>
-  <p class="meta"><strong>Authors:</strong> Neri, Matteo; Vinchhi, Dishie; Ferreyra, Christian; Robiglio, Thomas; Ates, Onur; Ontivero-Ortega, Marlis; Brovelli, Andrea; Marinazzo, Daniele; Combrisson, Etienne — <em>Journal of Open Source Software</em>, 9, (103), 7360 — <strong>2024</strong></p>
-</article>
+      <article class="pub" data-year="2024" data-title="Neuronal avalanches support cognitive processes during speech and music listening" data-authors="Neri, Matteo; Runfola, Claudio; te Rietmolen, Noémie; Sorrentino, Pierpaolo; Schon, Daniele; Morillon, Benjamin; Rabuffo, Giovanni">
+        <h3>Neuronal avalanches support cognitive processes during speech and music listening</h3>
+        <p class="meta"><strong>Authors:</strong> Neri, Matteo; Runfola, Claudio; te Rietmolen, Noémie; Sorrentino, Pierpaolo; Schon, Daniele; Morillon, Benjamin; Rabuffo, Giovanni — <em>OHBM 2024 Annual Meeting</em> — <strong>2024</strong></p>
+      </article>
 
-<article class="pub" data-year="2023" data-title="Phasik: a Python package to identify system states in partially temporal networks" data-authors="Lucas, Maxime; Townsend-Teague, Alex; Neri, Matteo; Poetto, Simone; Morris, Arthur; Habermann, Bianca; Tichit, Laurent">
-  <h3>Phasik: a Python package to identify system states in partially temporal networks</h3>
-  <p class="meta"><strong>Authors:</strong> Lucas, Maxime; Townsend-Teague, Alex; Neri, Matteo; Poetto, Simone; Morris, Arthur; Habermann, Bianca; Tichit, Laurent — <em>Journal of Open Source Software</em>, 8, (91), 5872 — <strong>2023</strong></p>
-</article>
+      <article class="pub" data-year="2024" data-title="HOI: A Python toolbox for high-performance estimation of Higher-Order Interactions from multivariate data" data-authors="Neri, Matteo; Vinchhi, Dishie; Ferreyra, Christian; Robiglio, Thomas; Ates, Onur; Ontivero-Ortega, Marlis; Brovelli, Andrea; Marinazzo, Daniele; Combrisson, Etienne">
+        <h3>HOI: A Python toolbox for high-performance estimation of Higher-Order Interactions from multivariate data</h3>
+        <p class="meta"><strong>Authors:</strong> Neri, Matteo; Vinchhi, Dishie; Ferreyra, Christian; Robiglio, Thomas; Ates, Onur; Ontivero-Ortega, Marlis; Brovelli, Andrea; Marinazzo, Daniele; Combrisson, Etienne — <em>Journal of Open Source Software</em>, 9 (103): 7360 — <strong>2024</strong></p>
+      </article>
 
-<article class="pub" data-year="2023" data-title="Neuronal avalanches in naturalistic speech and music listening" data-authors="Neri, Matteo; Runfola, Claudio; te Rietmolen, Noemie; Sorrentino, Pierpaolo; Schon, Daniele; Morillon, Benjamin; Rabuffo, Giovanni">
-  <h3>Neuronal avalanches in naturalistic speech and music listening</h3>
-  <p class="meta"><strong>Authors:</strong> Neri, Matteo; Runfola, Claudio; te Rietmolen, Noemie; Sorrentino, Pierpaolo; Schon, Daniele; Morillon, Benjamin; Rabuffo, Giovanni — <em>bioRxiv</em>, 2023--12 — <strong>2023</strong></p>
-</article>
+      <article class="pub" data-year="2023" data-title="Phasik: a Python package to identify system states in partially temporal networks" data-authors="Lucas, Maxime; Townsend-Teague, Alex; Neri, Matteo; Poetto, Simone; Morris, Arthur; Habermann, Bianca; Tichit, Laurent">
+        <h3>Phasik: a Python package to identify system states in partially temporal networks</h3>
+        <p class="meta"><strong>Authors:</strong> Lucas, Maxime; Townsend-Teague, Alex; Neri, Matteo; Poetto, Simone; Morris, Arthur; Habermann, Bianca; Tichit, Laurent — <em>Journal of Open Source Software</em>, 8 (91): 5872 — <strong>2023</strong></p>
+      </article>
 
+      <article class="pub" data-year="2023" data-title="Neuronal avalanches in naturalistic speech and music listening" data-authors="Neri, Matteo; Runfola, Claudio; te Rietmolen, Noemie; Sorrentino, Pierpaolo; Schon, Daniele; Morillon, Benjamin; Rabuffo, Giovanni">
+        <h3>Neuronal avalanches in naturalistic speech and music listening</h3>
+        <p class="meta"><strong>Authors:</strong> Neri, Matteo; Runfola, Claudio; te Rietmolen, Noemie; Sorrentino, Pierpaolo; Schon, Daniele; Morillon, Benjamin; Rabuffo, Giovanni — <em>bioRxiv</em>, 2023-12 — <strong>2023</strong></p>
+      </article>
+
+    </div>
   </main>
 
-  <footer class="footer">© <span id="y"></span> My Name</footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="socials">
+        <a class="hover-scale" href="mailto:matteo.neri@etu.univ-amu.fr"><img src="assets/icons/email.svg" alt="email"></a>
+        <a class="hover-scale" href="https://github.com/Mattehub"><img src="assets/icons/github.svg" alt="GitHub"></a>
+        <a class="hover-scale" href="https://www.linkedin.com/in/matteo-neri-0ab1a512a/"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+        <a class="hover-scale" href="https://scholar.google.com/citations?user=ubwQC-AAAAAJ&hl=it"><img src="assets/icons/scholar.svg" alt="Google Scholar"></a>
+      </div>
+      <div class="copyright">© 2025 Matteo Neri</div>
+    </div>
+  </footer>
+
+  <!-- Live search script -->
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-    const q = document.getElementById('search');
-    const pubs = Array.from(document.querySelectorAll('.pub'));
-    q?.addEventListener('input', () => {
-      const s = q.value.toLowerCase();
-      pubs.forEach(p => {
-        const txt = p.innerText.toLowerCase();
-        p.style.display = txt.includes(s) ? '' : 'none';
-      });
-    });
+    (function () {
+      const search = document.getElementById('search');
+      const list = document.getElementById('pub-list');
+      const items = Array.from(list.querySelectorAll('.pub'));
+      const counter = document.getElementById('result-count');
+      const total = items.length;
+
+      function norm(s) {
+        return (s || '').toString().toLowerCase()
+          .normalize('NFKD')
+          .replace(/\s+/g, ' ')
+          .trim();
+      }
+
+      function haystack(el) {
+        const ds = [el.dataset.year, el.dataset.title, el.dataset.authors]
+          .filter(Boolean).join(' ');
+        return norm(ds + ' ' + el.textContent);
+      }
+
+      const cache = new Map(items.map(el => [el, haystack(el)]));
+
+      function applyFilter(q) {
+        const qq = norm(q);
+        let shown = 0;
+        if (!qq) {
+          items.forEach(el => el.classList.remove('is-hidden'));
+          shown = total;
+        } else {
+          items.forEach(el => {
+            const match = cache.get(el).includes(qq);
+            el.classList.toggle('is-hidden', !match);
+            if (match) shown++;
+          });
+        }
+        counter.textContent = shown === total
+          ? `Showing all ${total} papers`
+          : `Showing ${shown} of ${total} papers`;
+      }
+
+      search.addEventListener('input', () => applyFilter(search.value));
+      search.addEventListener('change', () => applyFilter(search.value));
+
+      applyFilter('');
+    })();
   </script>
 </body>
 </html>
