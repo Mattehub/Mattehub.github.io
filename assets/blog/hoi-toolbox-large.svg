@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Large placeholder figure for HOI toolbox">
+  <rect width="1200" height="700" fill="#eef3f8"/>
+  <rect x="40" y="40" width="1120" height="620" rx="24" fill="#ffffff" stroke="#d9e2ec"/>
+  <rect x="180" y="160" width="360" height="220" rx="14" fill="#1f2a36"/>
+  <rect x="210" y="200" width="200" height="20" fill="#8fbfe0"/>
+  <rect x="210" y="240" width="250" height="20" fill="#cdb4db"/>
+  <rect x="210" y="280" width="150" height="20" fill="#f7a9a8"/>
+  <circle cx="760" cy="220" r="40" fill="#8fbfe0"/>
+  <circle cx="860" cy="280" r="40" fill="#cdb4db"/>
+  <circle cx="720" cy="360" r="40" fill="#f7a9a8"/>
+  <line x1="760" y1="220" x2="860" y2="280" stroke="#7ea3c4" stroke-width="6"/>
+  <line x1="760" y1="220" x2="720" y2="360" stroke="#7ea3c4" stroke-width="6"/>
+  <line x1="720" y1="360" x2="860" y2="280" stroke="#7ea3c4" stroke-width="6"/>
+  <text x="600" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#4b5b6b">
+    Replace with full-resolution figure for the paper
+  </text>
+</svg>

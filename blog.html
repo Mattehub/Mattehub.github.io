@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog - Matteo Neri</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar fade-in">
+    <div class="container nav-inner">
+      <div class="nav-brand" style="font-size:1.25rem;"><a href="index.html">Matteo Neri</a></div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container fade-in">
+    <h1 class="title">Blog</h1>
+    <p class="lead">Views are mine. Here you can read something about them.</p>
+
+    <div class="blog-list">
+      <article class="blog-card is-clickable is-essay" data-href="blog-new-physics.html" tabindex="0" aria-label="Open new physics essay">
+        <div class="blog-media">
+          <img src="assets/blog/placeholder-new-physics.svg" alt="Placeholder figure for New data, new systems: new physics" />
+        </div>
+        <div class="blog-body">
+          <h3>New data, new systems: new physics</h3>
+          <p class="blog-meta"><span>Essay</span> &middot; 2026</p>
+          <p>
+            A short reflection on the parallels between the early quantum revolution and the present
+            era of data-rich complex systems, with a focus on what this means for AI and new scientific
+            theory.
+          </p>
+        </div>
+      </article>
+
+      <p class="blog-note">What am I doing? Here you can read some summaries of recent papers</p>
+
+      <article class="blog-card is-clickable is-paper" data-href="blog-beyond-pairwise.html" tabindex="0" aria-label="Open Beyond Pairwise Interactions summary">
+        <div class="blog-media">
+          <img src="assets/blog/placeholder-beyond-pairwise.svg" alt="Placeholder figure for Beyond Pairwise Interactions" />
+        </div>
+        <div class="blog-body">
+          <h3>Beyond Pairwise Interactions: Charting Higher-Order Models of Brain Function</h3>
+          <p class="blog-meta"><span>Summary</span> &middot; <a href="https://www.biorxiv.org/content/10.1101/2025.06.24.661306v1.full">Read the preprint</a> &middot; 2025</p>
+          <p>
+            Our brains do not work as simple pairs of regions talking to each other. This work maps how
+            groups of three or more regions can coordinate together, and shows why these higher-order
+            interactions are essential to capture brain dynamics.
+          </p>
+        </div>
+      </article>
+
+      <article class="blog-card is-clickable is-paper" data-href="blog-taxonomy.html" tabindex="0" aria-label="Open taxonomy summary">
+        <div class="blog-media">
+          <img src="assets/blog/placeholder-taxonomy.svg" alt="Placeholder figure for interaction order taxonomy" />
+        </div>
+        <div class="blog-body">
+          <h3>A taxonomy of neuroscientific strategies based on interaction orders</h3>
+          <p class="blog-meta"><span>Summary</span> &middot; <a href="https://www.authorea.com/users/825533/articles/1221183-a-taxonomy-of-neuroscientific-strategies-based-on-interaction-orders">Read the EJN paper</a> &middot; 2025</p>
+          <p>
+            This paper proposes a clear vocabulary for describing how neuroscience studies interactions
+            at different orders, from pairs to groups. The taxonomy helps compare methods and choose
+            the right tool for each scientific question.
+          </p>
+        </div>
+      </article>
+
+      <!-- <article class="blog-card is-clickable is-paper" data-href="blog-heterogeneity.html" tabindex="0" aria-label="Open structural heterogeneity summary">
+        <div class="blog-media">
+          <img src="assets/blog/placeholder-heterogeneity.svg" alt="Placeholder figure for Structural heterogeneity across scales" />
+        </div>
+        <div class="blog-body">
+          <h3>The role of structural heterogeneity in shaping whole-brain dynamics across scales</h3>
+          <p class="blog-meta"><span>Summary</span> &middot; <a href="https://www.biorxiv.org/content/10.64898/2025.12.29.696703v1">Read the preprint</a> &middot; 2025</p>
+          <p>
+            The brain is not uniform: some regions are more connected or more specialized than others.
+            This study shows how those differences shape brain activity from local circuits to
+            whole-brain patterns, helping explain why a one-size-fits-all model is not enough.
+          </p>
+        </div>
+      </article>
+
+      <article class="blog-card is-clickable is-paper" data-href="blog-learning-synergy.html" tabindex="0" aria-label="Open learning synergy summary">
+        <div class="blog-media">
+          <img src="assets/blog/placeholder-learning.svg" alt="Placeholder figure for Higher-order interactions and learning" />
+        </div>
+        <div class="blog-body">
+          <h3>Higher-order and distributed synergistic functional interactions encode information gain in goal-directed learning</h3>
+          <p class="blog-meta"><span>Summary</span> &middot; <a href="https://www.biorxiv.org/content/10.1101/2024.09.23.614484v1">Read the preprint</a> &middot; 2024</p>
+          <p>
+            Learning is not just about single brain areas getting better. We show that learning is linked
+            to how several regions combine their information in a coordinated way, creating synergy that
+            predicts how much new information a person gains during a task.
+          </p>
+        </div>
+      </article>
+
+      <article class="blog-card is-clickable is-paper" data-href="blog-hoi-toolbox.html" tabindex="0" aria-label="Open HOI toolbox summary">
+        <div class="blog-media">
+          <img src="assets/blog/placeholder-hoi-toolbox.svg" alt="Placeholder figure for HOI toolbox" />
+        </div>
+        <div class="blog-body">
+          <h3>HOI: A Python toolbox for high-performance estimation of Higher-Order Interactions from multivariate data</h3>
+          <p class="blog-meta"><span>Summary</span> &middot; <a href="https://joss.theoj.org/papers/10.21105/joss.07360">Read the JOSS paper</a> &middot; 2024</p>
+          <p>
+            We introduce HOI, an open-source toolbox that makes higher-order interaction analysis fast,
+            reproducible, and accessible. The package lets researchers scale beyond pairs and quantify
+            synergy, redundancy, and complexity in multivariate datasets.
+          </p>
+        </div>
+      </article>
+
+      <article class="blog-card is-clickable is-paper" data-href="blog-avalanches.html" tabindex="0" aria-label="Open neuronal avalanches summary">
+        <div class="blog-media">
+          <img src="assets/blog/placeholder-avalanches.svg" alt="Placeholder figure for neuronal avalanches" />
+        </div>
+        <div class="blog-body">
+          <h3>Neuronal avalanches in naturalistic speech and music listening</h3>
+          <p class="blog-meta"><span>Summary</span> &middot; <a href="https://www.biorxiv.org/content/10.1101/2023.12.15.571888v1">Read the preprint</a> &middot; 2023</p>
+          <p>
+            We track bursts of neural activity while people listen to speech and music. The avalanche
+            patterns reveal how the brain balances stability and flexibility during naturalistic
+            cognitive processing.
+          </p>
+        </div>
+      </article> -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="socials">
+        <a class="hover-scale" href="mailto:matteo.neri@etu.univ-amu.fr"><img src="assets/icons/email.svg" alt="email"></a>
+        <a class="hover-scale" href="https://github.com/Mattehub"><img src="assets/icons/github.svg" alt="GitHub"></a>
+        <a class="hover-scale" href="https://www.linkedin.com/in/matteo-neri-0ab1a512a/"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+        <a class="hover-scale" href="https://scholar.google.com/citations?user=ubwQC-AAAAAJ&hl=it"><img src="assets/icons/scholar.svg" alt="Google Scholar"></a>
+      </div>
+      <div class="copyright">(c) 2025 Matteo Neri</div>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      const cards = document.querySelectorAll('.blog-card[data-href]');
+      cards.forEach((card) => {
+        card.addEventListener('click', (event) => {
+          if (event.target.closest('a')) return;
+          const href = card.getAttribute('data-href');
+          if (href) window.location.href = href;
+        });
+        card.addEventListener('keydown', (event) => {
+          if (event.key !== 'Enter' && event.key !== ' ') return;
+          event.preventDefault();
+          const href = card.getAttribute('data-href');
+          if (href) window.location.href = href;
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

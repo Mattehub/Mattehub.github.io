@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Large placeholder figure for synergistic learning">
+  <rect width="1200" height="700" fill="#fff4f2"/>
+  <rect x="40" y="40" width="1120" height="620" rx="24" fill="#ffffff" stroke="#f0d1cd"/>
+  <circle cx="460" cy="320" r="120" fill="#f7a9a8" opacity="0.65"/>
+  <circle cx="600" cy="280" r="120" fill="#8fbfe0" opacity="0.65"/>
+  <circle cx="740" cy="340" r="120" fill="#cdb4db" opacity="0.65"/>
+  <circle cx="600" cy="320" r="70" fill="#f1c27d" opacity="0.9"/>
+  <path d="M820 470 L1020 470" stroke="#5a6675" stroke-width="7"/>
+  <polygon points="1020,470 1005,460 1005,480" fill="#5a6675"/>
+  <text x="1040" y="478" font-family="Arial, sans-serif" font-size="20" fill="#5a6675">gain</text>
+  <text x="600" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#4b5b6b">
+    Replace with full-resolution figure for the paper
+  </text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Large placeholder figure for structural heterogeneity">
+  <rect width="1200" height="700" fill="#f5f7f0"/>
+  <rect x="40" y="40" width="1120" height="620" rx="24" fill="#ffffff" stroke="#d9e2ec"/>
+  <line x1="220" y1="520" x2="980" y2="520" stroke="#9aa6b2" stroke-width="5"/>
+  <rect x="260" y="360" width="70" height="160" fill="#8fbfe0"/>
+  <rect x="370" y="300" width="70" height="220" fill="#cdb4db"/>
+  <rect x="480" y="240" width="70" height="280" fill="#f7a9a8"/>
+  <rect x="590" y="320" width="70" height="200" fill="#8fbfe0"/>
+  <rect x="700" y="400" width="70" height="120" fill="#cdb4db"/>
+  <path d="M260 240 C380 150, 620 150, 740 240" fill="none" stroke="#7ea3c4" stroke-width="5"/>
+  <text x="600" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#4b5b6b">
+    Replace with full-resolution figure for the paper
+  </text>
+</svg>

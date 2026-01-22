@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Large placeholder figure for neuronal avalanches">
+  <rect width="1200" height="700" fill="#f0f6ff"/>
+  <rect x="40" y="40" width="1120" height="620" rx="24" fill="#ffffff" stroke="#d9e2ec"/>
+  <line x1="200" y1="170" x2="1000" y2="170" stroke="#d0dae6" stroke-width="4"/>
+  <line x1="200" y1="260" x2="1000" y2="260" stroke="#d0dae6" stroke-width="4"/>
+  <line x1="200" y1="350" x2="1000" y2="350" stroke="#d0dae6" stroke-width="4"/>
+  <line x1="200" y1="440" x2="1000" y2="440" stroke="#d0dae6" stroke-width="4"/>
+  <circle cx="280" cy="170" r="12" fill="#8fbfe0"/>
+  <circle cx="330" cy="260" r="12" fill="#8fbfe0"/>
+  <circle cx="380" cy="350" r="12" fill="#8fbfe0"/>
+  <circle cx="430" cy="440" r="12" fill="#8fbfe0"/>
+  <circle cx="490" cy="350" r="12" fill="#f7a9a8"/>
+  <circle cx="540" cy="260" r="12" fill="#f7a9a8"/>
+  <circle cx="590" cy="170" r="12" fill="#f7a9a8"/>
+  <circle cx="650" cy="260" r="12" fill="#cdb4db"/>
+  <circle cx="700" cy="350" r="12" fill="#cdb4db"/>
+  <text x="600" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#4b5b6b">
+    Replace with full-resolution figure for the paper
+  </text>
+</svg>

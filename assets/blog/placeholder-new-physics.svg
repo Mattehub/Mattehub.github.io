@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="330" viewBox="0 0 520 330" role="img" aria-label="Diagram of new data and new physics">
+  <rect width="520" height="330" fill="#f4f7ff"/>
+  <rect x="24" y="24" width="472" height="282" rx="18" fill="#ffffff" stroke="#d9e2ec"/>
+  <line x1="90" y1="230" x2="430" y2="230" stroke="#9aa6b2" stroke-width="3"/>
+  <circle cx="130" cy="230" r="10" fill="#8fbfe0"/>
+  <circle cx="200" cy="230" r="10" fill="#cdb4db"/>
+  <circle cx="270" cy="230" r="10" fill="#f7a9a8"/>
+  <circle cx="340" cy="230" r="10" fill="#8fbfe0"/>
+  <path d="M120 160 C170 120, 240 120, 300 160" fill="none" stroke="#7ea3c4" stroke-width="3"/>
+  <path d="M230 150 C290 110, 360 110, 410 150" fill="none" stroke="#a58bb7" stroke-width="3"/>
+  <text x="260" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#4b5b6b">
+    New data, new systems, new physics
+  </text>
+  <text x="260" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#4b5b6b">
+    From simple measurements to complex networks
+  </text>
+</svg>
