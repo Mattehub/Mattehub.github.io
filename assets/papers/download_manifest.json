@@ -1,0 +1,127 @@
+{
+  "profile": "https://scholar.google.com/citations?user=ubwQC-AAAAAJ&hl=it",
+  "total_entries": 17,
+  "downloaded": 12,
+  "not_downloaded": 5,
+  "results": [
+    {
+      "title": "Synergistic signatures of group mechanisms in higher-order systems",
+      "status": "downloaded",
+      "reason": null,
+      "file": "C:\\Users\\matte\\repositories\\Mattehub.github.io\\assets\\papers\\Synergistic signatures of group mechanisms in higher-order systems.pdf",
+      "used_url": "https://arxiv.org/pdf/2401.11588"
+    },
+    {
+      "title": "HOI: A Python toolbox for high-performance estimation of Higher-Order Interactions from multivariate data",
+      "status": "downloaded",
+      "reason": null,
+      "file": "C:\\Users\\matte\\repositories\\Mattehub.github.io\\assets\\papers\\HOI A Python toolbox for high-performance estimation of Higher-Order Interactions from multivariate data.pdf",
+      "used_url": "https://joss.theoj.org/papers/10.21105/joss.07360.pdf"
+    },
+    {
+      "title": "L-Dopa-induced changes in aperiodic bursts dynamics relate to individual clinical improvement in Parkinson’s disease",
+      "status": "downloaded",
+      "reason": null,
+      "file": "C:\\Users\\matte\\repositories\\Mattehub.github.io\\assets\\papers\\L-Dopa-induced changes in aperiodic bursts dynamics relate to individual clinical improvement in Parkinson’s disease.pdf",
+      "used_url": "https://www.nature.com/articles/s41531-025-01024-w.pdf"
+    },
+    {
+      "title": "Higher-order and distributed synergistic functional interactions encode information gain in goal-directed learning",
+      "status": "downloaded",
+      "reason": null,
+      "file": "C:\\Users\\matte\\repositories\\Mattehub.github.io\\assets\\papers\\Higher-order and distributed synergistic functional interactions encode information gain in goal-directed learning.pdf",
+      "used_url": "https://www.nature.com/articles/s41467-025-62507-1.pdf"
+    },
+    {
+      "title": "A taxonomy of neuroscientific strategies based on interaction orders",
+      "status": "downloaded",
+      "reason": null,
+      "file": "C:\\Users\\matte\\repositories\\Mattehub.github.io\\assets\\papers\\A taxonomy of neuroscientific strategies based on interaction orders.pdf",
+      "used_url": "https://hal.science/hal-05409427v1/file/Neri_2024.pdf"
+    },
+    {
+      "title": "Neuronal avalanches in naturalistic speech and music listening",
+      "status": "no_pdf_found",
+      "reason": "https://www.biorxiv.org/content/10.1101/2023.12.15.571888.full.pdf -> HTTP 403",
+      "file": null,
+      "used_url": null
+    },
+    {
+      "title": "An integrated computational framework for diversity-sensitive personalized medicine",
+      "status": "downloaded",
+      "reason": null,
+      "file": "C:\\Users\\matte\\repositories\\Mattehub.github.io\\assets\\papers\\An integrated computational framework for diversity-sensitive personalized medicine.pdf",
+      "used_url": "https://d197for5662m48.cloudfront.net/documents/publicationstatus/261599/preprint_pdf/ae6348925ab352d13bd10897b0af1e9f.pdf"
+    },
+    {
+      "title": "Beyond Pairwise Interactions: Charting Higher-Order Models of Brain Function",
+      "status": "no_pdf_found",
+      "reason": "https://www.biorxiv.org/content/biorxiv/early/2025/06/25/2025.06.24.661306.full.pdf -> HTTP 403",
+      "file": null,
+      "used_url": null
+    },
+    {
+      "title": "Complexity in speech and music listening via neural manifold flows",
+      "status": "no_candidate_links",
+      "reason": null,
+      "file": null,
+      "used_url": null
+    },
+    {
+      "title": "Phasik: A python package to identify system states in partially temporal networks",
+      "status": "downloaded",
+      "reason": null,
+      "file": "C:\\Users\\matte\\repositories\\Mattehub.github.io\\assets\\papers\\Phasik A python package to identify system states in partially temporal networks.pdf",
+      "used_url": "https://joss.theoj.org/papers/10.21105/joss.05872.pdf"
+    },
+    {
+      "title": "Brain Fluidity as a Functional Marker of Tau-Related Neurodegeneration in Alzheimer’s Disease",
+      "status": "downloaded",
+      "reason": null,
+      "file": "C:\\Users\\matte\\repositories\\Mattehub.github.io\\assets\\papers\\Brain Fluidity as a Functional Marker of Tau-Related Neurodegeneration in Alzheimer’s Disease.pdf",
+      "used_url": "https://www.medrxiv.org/content/medrxiv/early/2025/07/05/2025.07.04.25330744.full.pdf"
+    },
+    {
+      "title": "The role of structural heterogeneity in shaping whole-brain dynamics across scales",
+      "status": "no_pdf_found",
+      "reason": "https://www.biorxiv.org/content/biorxiv/early/2025/12/29/2025.12.29.696703.full.pdf -> HTTP 403",
+      "file": null,
+      "used_url": null
+    },
+    {
+      "title": "An integrated computational approach for diversity-sensitive personalized medicine",
+      "status": "downloaded",
+      "reason": null,
+      "file": "C:\\Users\\matte\\repositories\\Mattehub.github.io\\assets\\papers\\An integrated computational approach for diversity-sensitive personalized medicine.pdf",
+      "used_url": "https://nul.repository.guildhe.ac.uk/id/eprint/2614/1/1-s2.0-S030645222500853X-main.pdf"
+    },
+    {
+      "title": "Characterization Of Diseases In Temporal Comorbidity Networks",
+      "status": "downloaded",
+      "reason": null,
+      "file": "C:\\Users\\matte\\repositories\\Mattehub.github.io\\assets\\papers\\Characterization Of Diseases In Temporal Comorbidity Networks.pdf",
+      "used_url": "https://arxiv.org/pdf/2506.22136"
+    },
+    {
+      "title": "DISENTANGLING PREVALENCE AND RISK PATHWAYS IN DISEASE COMORBIDITY NETWORKS",
+      "status": "no_candidate_links",
+      "reason": null,
+      "file": null,
+      "used_url": null
+    },
+    {
+      "title": "Neuronal avalanches support cognitive processes during speech and music listening",
+      "status": "downloaded",
+      "reason": null,
+      "file": "C:\\Users\\matte\\repositories\\Mattehub.github.io\\assets\\papers\\Neuronal avalanches support cognitive processes during speech and music listening.pdf",
+      "used_url": "https://arxiv.org/abs/2401.11588"
+    },
+    {
+      "title": "L-Dopa-induced changes in aperiodic bursts dynamics relate to individual clinical improvement in ParkinsonLs",
+      "status": "downloaded",
+      "reason": "Title variant mapped to downloaded paper 'L-Dopa-induced changes in aperiodic bursts dynamics relate to individual clinical improvement in Parkinson’s disease' (similarity 0.96)",
+      "file": "C:\\Users\\matte\\repositories\\Mattehub.github.io\\assets\\papers\\L-Dopa-induced changes in aperiodic bursts dynamics relate to individual clinical improvement in Parkinson’s disease.pdf",
+      "used_url": "https://www.nature.com/articles/s41531-025-01024-w.pdf"
+    }
+  ]
+}

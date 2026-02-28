@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interaction Order Taxonomy - Matteo Neri</title>
+  <title>How Can Mind Emerge from Brain? - Matteo Neri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="taxonomy-page">
   <header class="navbar fade-in">
     <div class="container nav-inner">
       <div class="nav-brand" style="font-size:1.25rem;"><a href="index.html">Matteo Neri</a></div>
@@ -20,43 +23,182 @@
     </div>
   </header>
 
-  <main class="container fade-in">
-    <a class="back" href="blog.html">Back to Blog</a>
-    <section class="blog-detail">
-      <div class="blog-hero">
-        <div>
-          <h1>A taxonomy of neuroscientific strategies based on interaction orders</h1>
-          <p class="blog-meta">European Journal of Neuroscience &middot; 2025 &middot; <a href="https://www.authorea.com/users/825533/articles/1221183-a-taxonomy-of-neuroscientific-strategies-based-on-interaction-orders">Read the EJN paper</a></p>
+  <main class="taxonomy-main fade-in">
+    <article class="taxonomy-article">
+      <a class="back taxonomy-back" href="blog.html">Back to Blog</a>
+
+      <header class="taxonomy-hero">
+        <p class="taxonomy-kicker">Paper note</p>
+        <h1>How can the mind emerge from the brain?</h1>
+        <p class="taxonomy-dek">
+          A short guided tour of <em>A taxonomy of neuroscientific strategies based on interaction orders</em>:
+          what it suggests, why it may matter, and how brain data might be read in a broader way.
+        </p>
+        <p class="taxonomy-meta">
+          European Journal of Neuroscience &middot; 2025 &middot;
+          <a href="https://www.authorea.com/users/825533/articles/1221183-a-taxonomy-of-neuroscientific-strategies-based-on-interaction-orders">Read the paper</a>
+        </p>
+      </header>
+
+      <section class="taxonomy-section">
+        <p>
+          One practical way to approach the old question "how does mind emerge from brain?" is this:
+          collect brain signals, then compare them with behavior, thoughts, symptoms, or clinical outcomes.
+          This has been one of the more productive directions in modern neuroscience.
+        </p>
+        <p>
+          In simple terms, researchers record activity while people do something, then ask what in the brain
+          changes with the task. For example, some frontal areas increase activity in reward-seeking contexts.
+          In other cases, specific neurons respond strongly to a specific person (face or voice).
+          So a core ambition is to connect brain dynamics to lived cognition and pathology.
+        </p>
+      </section>
+
+      <aside class="taxonomy-pull">
+        Much of neuroscience can be seen as one long translation task:
+        from neural activity to cognition, behavior, and disease-related processes.
+      </aside>
+
+      <section class="taxonomy-section">
+        <h2>From Many Methods to One Organizing Map</h2>
+        <p>
+          Over time, many solid strategies were developed. A classic one compares task versus rest,
+          region by region, to see what each area contributes. Another studies pairwise links between regions.
+          More recent methods go further and look at interactions among triplets or larger groups.
+        </p>
+        <p>
+          The taxonomy paper puts these approaches on one map, using a single idea:
+          a <strong>spectrum of interaction orders</strong>.
+        </p>
+      </section>
+
+      <section class="taxonomy-section">
+        <h3 class="taxonomy-subtitle">A compact table of strategies</h3>
+        <div class="taxonomy-table-wrap">
+          <table class="taxonomy-table" aria-label="Neuroscientific strategies across interaction orders">
+            <thead>
+              <tr>
+                <th>Interaction order</th>
+                <th>What is modeled</th>
+                <th>Typical strategy</th>
+                <th>What you gain</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Order 1</td>
+                <td>Single region / neuron</td>
+                <td>Task-vs-rest univariate effects</td>
+                <td>Local functional specialization</td>
+              </tr>
+              <tr>
+                <td>Order 2</td>
+                <td>Pairs of regions</td>
+                <td>Functional connectivity</td>
+                <td>Co-variation and network links</td>
+              </tr>
+              <tr>
+                <td>Order 3+</td>
+                <td>Triplets and groups</td>
+                <td>Higher-order interaction analysis</td>
+                <td>Synergy, redundancy, collective rules</td>
+              </tr>
+              <tr>
+                <td>Whole system</td>
+                <td>Many elements at once</td>
+                <td>Multivariate/system-level models</td>
+                <td>Global integration constraints</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </div>
 
-      <figure class="blog-figure">
-        <img src="assets/blog/figure_3_philo_neuro"/>
-      </figure>
+        <figure class="taxonomy-figure">
+          <img src="assets/blog/taxonomy-spectrum-orders.png" alt="Spectrum of neuroscientific strategies from univariate analyses to higher-order interactions." />
+          <figcaption>
+            The same field, one organizing axis: how many elements must be considered together.
+          </figcaption>
+        </figure>
+      </section>
 
-      <div class="blog-content">
+      <section class="taxonomy-section">
+        <h2>The Horse Example: Why Orders Matter</h2>
         <p>
-          Neuroscientific strategies can be organized by the interaction
-          order they study: pairwise, triplet, and higher-order group effects. 
-          The definition of the spectrum of interactions orders provides a 
-          new dimension that needs to be explored to build a comprehensive
-          understanding of brain function.
-        </p>
-        <p class="highlight">
-          Key idea: to understand brain function, we need to investigate different orders of Interactions
-          as well as to investigate different spatio temporal scales or employ different techniques.
+          To make this intuitive, the paper introduces a toy model: Artemis the horse.
+          The point is not realism. The point is to show, step by step, that some behaviors are visible
+          at low order, while others may only appear when multiple signals are read together.
         </p>
         <p>
-          We review how different experimental and computational strategies map onto interaction
-          orders. This taxonomy helps clarify how different methods complement each other and the level of 
-          explanation they can provide.
+          Imagine you are the neuroscientist in this experiment. You can only observe the middle layer
+          of Artemis' neural system, and you want to explain what she does: move forward, dodge a tree,
+          avoid food, or turn back. If you inspect one neuron at a time, you may get useful clues, but not the full logic.
         </p>
         <p>
-          The framework is designed as a practical guide, not just a classification, and it aims to
-          make higher-order concepts accessible to the broader neuroscience community.
+          In the paper this is very concrete. <strong>Order 1 (single neuron):</strong> one neuron can already
+          explain one behavior. For example, neuron 1 is enough to track tree-dodging.
+          But for neurons 2, 3, 4, 5, and 6, single-neuron reading may remain ambiguous.
         </p>
-      </div>
-    </section>
+        <p>
+          <strong>Order 2 (pairs):</strong> now look at neurons 2 and 3 together. A clear rule appears:
+          Artemis avoids food when exactly one is active; she does not avoid when both are active
+          or both are silent. This is XOR-like logic ("one yes, one no"), and you cannot see it
+          by looking at neuron 2 or 3 alone.
+        </p>
+        <p>
+          <strong>Order 3 (triplets):</strong> then move to neurons 4, 5, and 6 as a group.
+          Here the meaningful pattern appears at triplet-level: Artemis turns back in mixed combinations,
+          but not when all three are ON together or all three are OFF together.
+          Again, the rule lives in the joint state, not in any single unit.
+        </p>
+        <p>
+          This may be the central lesson of the example: different behaviors can "live" at different orders.
+          If we only analyze one slice of the spectrum, we may miss the mechanism that matters most for that behavior.
+        </p>
+        <figure class="taxonomy-figure">
+          <img src="assets/blog/taxonomy-horse-model.png" alt="Artemis horse toy model showing neural mechanisms and behavior outcomes." />
+          <figcaption>
+            Artemis in one picture: the same behavior can come from mechanisms at different interaction orders.
+          </figcaption>
+        </figure>
+        <p>
+          The same intuition appears in everyday computing. Different questions require different levels:
+        </p>
+        <ol>
+          <li>Low level: coffee spills into the laptop. You care about hardware and electrical damage.</li>
+          <li>System level: you change operating-system version and need a reboot. You care about OS-level constraints.</li>
+          <li>Whole-use level: you want to print a PDF. You need the full chain to work: app, OS services, drivers, printer.</li>
+        </ol>
+        <p>
+          No single level is "the true one" for every problem.
+          Brain science may be similar: different questions can become clearer at different interaction orders.
+        </p>
+      </section>
+
+      <section class="taxonomy-section">
+        <h2>Interaction Order as a New Axis</h2>
+        <p>
+          Once this clicks, interaction order may stop being just a technical option and become a scientific axis,
+          alongside space (where in the brain) and time (when dynamics unfold).
+        </p>
+        <p>
+          The broader proposal is integration: if we want stronger explanations of cognition and pathology,
+          we may need to combine these dimensions rather than optimize only one.
+        </p>
+        <figure class="taxonomy-figure">
+          <img src="assets/blog/taxonomy-three-axes.png" alt="Three-axis framework including cross-techniques, cross-levels, and cross-orders integration." />
+          <figcaption>
+            A practical target for the field: integrate techniques, levels, and interaction orders together.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="taxonomy-section taxonomy-close">
+        <p>
+          Bottom line: to understand how mind emerges from brain, we may need to move across
+          interaction orders, not only across regions, time scales, or tools.
+        </p>
+      </section>
+    </article>
   </main>
 
   <footer class="footer">
